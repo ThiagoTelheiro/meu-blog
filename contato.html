@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Blog do Thiago</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contato container">
+        <h2>Fale Conosco</h2>
+        <form id="form-contato" novalidate>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+            placeholder="Seu nome completo"
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="seuemail@exemplo.com"
+          />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            required
+            placeholder="Escreva sua mensagem aqui..."
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="msg-resultado"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Blog do Thiago. Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="btn-topo" title="Voltar ao topo">&#8679;</button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

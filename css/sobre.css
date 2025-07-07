@@ -1,0 +1,51 @@
+.sobre {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #004aad;
+  text-align: center;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bio img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #004aad;
+}
+
+.texto-bio p {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .bio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-width: 3px;
+  }
+}

@@ -1,0 +1,68 @@
+.contato {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contato h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #004aad;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #004aad;
+  outline: none;
+}
+
+button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002f6c;
+}
+
+#msg-resultado {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .contato {
+    padding: 20px 10px;
+  }
+}

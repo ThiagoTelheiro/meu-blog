@@ -1,0 +1,59 @@
+.artigos-lista {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.artigos-lista h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #004aad;
+}
+
+.artigo {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.artigo:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.artigo h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.artigo h3 a {
+  color: #004aad;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.artigo h3 a:hover {
+  color: #002f6c;
+}
+
+.artigo p {
+  color: #555;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .artigos-lista {
+    padding: 20px 10px;
+  }
+
+  .artigo {
+    padding: 15px;
+  }
+
+  .artigo h3 {
+    font-size: 1.2rem;
+  }
+}
